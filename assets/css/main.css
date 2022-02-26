@@ -1,0 +1,405 @@
+/* The side navigation menu */
+.mybizna_sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the mybizna_sidenav */
+    z-index: 10000;
+}
+
+/* The navigation menu links */
+.mybizna_sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.mybizna_sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.mybizna_sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.mybizna_sidenav_btn {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 20px 5px !important;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    margin-right: -3px !important;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+
+.mybizna_menu,
+.mybizna_menu .wp-submenu,
+.mybizna_menuback,
+.mybizna_menuwrap {
+    background-color: #1d2327
+}
+
+.mybizna_menuback {
+    position: fixed;
+    top: 0;
+    bottom: -120px;
+    z-index: 1
+}
+
+
+.mybizna_menu {
+    clear: left;
+    margin: 12px 0;
+    padding: 0;
+    list-style: none
+}
+
+
+.mybizna_menuwrap {
+    position: relative;
+    float: left;
+    z-index: 9990
+}
+
+.mybizna_menu * {
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.mybizna_menu li {
+    margin: 0;
+    padding: 0
+}
+
+.mybizna_menu a {
+    display: block;
+    line-height: 1.3;
+    padding: 2px 5px;
+    color: #f0f0f1
+}
+
+.mybizna_menu .wp-submenu a {
+    color: #c3c4c7;
+    color: rgba(240, 246, 252, .7);
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 5px 0
+}
+
+.mybizna_menu .wp-submenu a:focus,
+.mybizna_menu .wp-submenu a:hover {
+    background: 0 0
+}
+
+.mybizna_menu .wp-submenu a:focus,
+.mybizna_menu .wp-submenu a:hover,
+.mybizna_menu a:hover,
+.mybizna_menu li.menu-top>a:focus {
+    color: #72aee6
+}
+
+.mybizna_menu a:focus,
+.mybizna_menu a:hover {
+    box-shadow: inset 4px 0 0 0 currentColor;
+    transition: box-shadow .1s linear
+}
+
+.mybizna_menu li.menu-top {
+    border: none;
+    min-height: 34px;
+    position: relative
+}
+
+.mybizna_menu .wp-submenu {
+    list-style: none;
+    position: absolute;
+    top: -1000em;
+    left: -160px;
+    overflow: visible;
+    word-wrap: break-word;
+    padding: 7px 0 8px;
+    z-index: 9999;
+    background-color: #707172;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2)
+}
+
+.mybizna_menu a.menu-top:focus+.wp-submenu,
+.js .mybizna_menu .opensub .wp-submenu,
+.js .mybizna_menu .sub-open,
+.no-js li.wp-has-submenu:hover .wp-submenu {
+    top: -1px
+}
+
+.mybizna_menu a.wp-has-current-submenu:focus+.wp-submenu {
+    top: 0
+}
+
+.mybizna_menu .wp-has-current-submenu .wp-submenu,
+.mybizna_menu .wp-has-current-submenu .wp-submenu.sub-open,
+.mybizna_menu .wp-has-current-submenu.opensub .wp-submenu,
+.no-js li.wp-has-current-submenu:hover .wp-submenu
+{
+    position: relative;
+    z-index: 3;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    border: 0 none;
+    margin-top: 0;
+    box-shadow: none
+}
+
+.mybizna_menu li.menu-top:hover,
+.mybizna_menu li.opensub>a.menu-top,
+.mybizna_menu li>a.menu-top:focus {
+    position: relative;
+    background-color: #1d2327;
+    color: #72aee6
+}
+
+.mybizna_menu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+.mybizna_menu .wp-menu-arrow,
+.mybizna_menu .wp-menu-arrow div,
+.mybizna_menu li.current a.menu-top,
+.mybizna_menu li.wp-has-current-submenu a.wp-has-current-submenu {
+    background: #2271b1;
+    color: #fff
+}
+
+.mybizna_menu .wp-not-current-submenu .wp-submenu {
+    min-width: 160px;
+    width: auto;
+    border-left: 5px solid transparent
+}
+
+.mybizna_menu .opensub .wp-submenu li.current a,
+.mybizna_menu .wp-submenu li.current,
+.mybizna_menu .wp-submenu li.current a,
+.mybizna_menu .wp-submenu li.current a:focus,
+.mybizna_menu .wp-submenu li.current a:hover,
+.mybizna_menu a.wp-has-current-submenu:focus+.wp-submenu li.current a {
+    color: #fff
+}
+
+.mybizna_menu .wp-not-current-submenu li>a {
+    padding-right: 16px;
+    padding-left: 14px;
+    transition: all .1s ease-in-out, outline 0s
+}
+
+.mybizna_menu .wp-has-current-submenu ul>li>a {
+    padding: 5px 12px
+}
+
+.mybizna_menu .wp-submenu-head,
+.mybizna_menu a.menu-top {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 0
+}
+
+.mybizna_menu .wp-submenu-head {
+    display: none
+}
+
+.mybizna_menu .wp-submenu li {
+    padding: 0;
+    margin: 0
+}
+
+.mybizna_menu .wp-menu-image img {
+    padding: 9px 0 0;
+    opacity: .6
+}
+
+.mybizna_menu div.wp-menu-name {
+    padding: 8px 8px 8px 36px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto
+}
+
+.mybizna_menu div.wp-menu-image {
+    float: left;
+    width: 36px;
+    height: 34px;
+    margin: 0;
+    text-align: center
+}
+
+.mybizna_menu div.wp-menu-image.svg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px auto
+}
+
+div.wp-menu-image:before {
+    color: #a7aaad;
+    color: rgba(240, 246, 252, .6);
+    padding: 7px 0;
+    transition: all .1s ease-in-out
+}
+
+.mybizna_menu div.wp-menu-image:before {
+    color: #a7aaad;
+    color: rgba(240, 246, 252, .6)
+}
+
+.mybizna_menu .current div.wp-menu-image:before,
+.mybizna_menu .wp-has-current-submenu div.wp-menu-image:before,
+.mybizna_menu a.current:hover div.wp-menu-image:before,
+.mybizna_menu a.wp-has-current-submenu:hover div.wp-menu-image:before,
+.mybizna_menu li.wp-has-current-submenu a:focus div.wp-menu-image:before,
+.mybizna_menu li.wp-has-current-submenu.opensub div.wp-menu-image:before,
+.mybizna_menu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+    color: #fff
+}
+
+.mybizna_menu li a:focus div.wp-menu-image:before,
+.mybizna_menu li.opensub div.wp-menu-image:before,
+.mybizna_menu li:hover div.wp-menu-image:before {
+    color: #72aee6
+}
+
+
+ul.mybizna_menu a.wp-has-current-submenu {
+    position: relative
+}
+
+ul.mybizna_menu a.wp-has-current-submenu:after,
+ul.mybizna_menu>li.current>a.current:after {
+    right: 0;
+    border: solid 8px transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #f0f0f1;
+    top: 50%;
+    margin-top: -8px
+}
+
+
+.mybizna_menu li.wp-has-submenu.wp-not-current-submenu:focus-within:after,
+.mybizna_menu li.wp-has-submenu.wp-not-current-submenu:hover:after {
+    right: 0;
+    border: 8px solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    z-index: 10000
+}
+
+
+.mybizna_menu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after,
+.mybizna_menu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+    border-right-color: #2c3338
+}
+
+.mybizna_menu li.menu-top:hover .wp-menu-image img,
+.mybizna_menu li.wp-has-current-submenu .wp-menu-image img {
+    opacity: 1
+}
+
+.mybizna_menu li.wp-menu-separator {
+    height: 5px;
+    padding: 0;
+    margin: 0 0 6px;
+    cursor: inherit
+}
+
+.mybizna_menu div.separator {
+    height: 2px;
+    padding: 0
+}
+
+.mybizna_menu .wp-submenu .wp-submenu-head {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 4px 5px 11px;
+    margin: -7px 0 4px -5px;
+    border-width: 3px 0 3px 5px;
+    border-style: solid;
+    border-color: transparent
+}
+
+.mybizna_menu li.current {
+    border: 0 none
+}
+
+.mybizna_menu .awaiting-mod,
+.mybizna_menu .update-plugins {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 1px 0 -1px 2px;
+    padding: 0 5px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #d63638;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: center;
+    z-index: 26
+}
+
+.mybizna_menu li a.wp-has-current-submenu .update-plugins,
+.mybizna_menu li.current a .awaiting-mod {
+    background-color: #d63638;
+    color: #fff
+}
+
+.mybizna_menu li span.count-0 {
+    display: none
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the mybizna_sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .mybizna_sidenav {
+        padding-top: 15px;
+    }
+
+    .mybizna_sidenav a {
+        font-size: 18px;
+    }
+}
